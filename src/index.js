@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 
-  // Fetch and display toys
+  //  display toys
   fetch('http://localhost:3000/toys')
       .then(response => response.json())
       .then(toys => {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
           });
       });
 
-  // Add new toy
+  //  new toy
   toyForm.addEventListener('submit', (event) => {
       event.preventDefault();
       const name = event.target.name.value;
